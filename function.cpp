@@ -25,19 +25,28 @@ using namespace std;
 //    }
 // }
 
-int printMaximumNumber(int num1, int num2, int num3)
+// int printMaximumNumber(int num1, int num2, int num3)
+// {
+//    int ans1 = max(num1, num2);
+//    int finalAns = max(ans1, num3);
+// cout << "Maximum number is: " << finalAns << endl;
+// return finalAns;
+// }
+
+void printCounting(int n)
 {
-   int ans1 = max(num1, num2);
-   int finalAns = max(ans1, num3);
-   // cout << "Maximum number is: " << finalAns << endl;
-   return finalAns;
+   for (int i = 1; i <= n; i++)
+   {
+      cout << i << endl;
+   }
 }
 
 int main()
 {
    // printLine();
    // printMaximum(80, 760, 90);
-   int maximum = printMaximumNumber(81, 76, 90);
-   cout << "Maximum is :" << maximum << endl;
+   // int maximum = printMaximumNumber(81, 76, 90);
+   // cout << "Maximum is :" << maximum << endl;
+   printCounting(10);
    return 0;
 }
