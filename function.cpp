@@ -45,13 +45,34 @@ void checkEvenOdd(int num)
 {
    if (num % 2 == 0)
    {
-      cout << "Number is even" << endl;
+      cout << "Even Number" << endl;
    }
    else
    {
-      cout << "Number is odd" << endl;
+      cout << "Odd Number" << endl;
    }
 }
+
+void findSumUptoN(int n)
+{
+   int sum = 0;
+   for (int i = 0; i <= n; i++)
+   {
+      sum += i;
+   }
+   cout << "Final Sum : " << sum << endl;
+}
+
+void findSumEvenUptoN(int n)
+{
+   int sum = 0;
+   for (int i = 2; i <= n; i + 2)
+   {
+      sum += i;
+   }
+   cout << "Final Sum : " << sum << endl;
+}
+
 int main()
 {
    // printLine();
@@ -59,6 +80,8 @@ int main()
    // int maximum = printMaximumNumber(81, 76, 90);
    // cout << "Maximum is :" << maximum << endl;
    // printCounting(10);
-   checkEvenOdd(101);
+   // checkEvenOdd(101);
+   // findSumUptoN(10);
+   findSumEvenUptoN(10);
    return 0;
 }
