@@ -86,6 +86,19 @@ void sumEvenNum(int n)
 //    cout << "Hello World!" << endl;
 // }
 
+bool checkPrime(int n)
+{
+   for (int i = 2; i < n; i++)
+   {
+
+      if (n % i == 0)
+      {
+         return false;
+      }
+   }
+   return true;
+}
+
 int main()
 {
    // printLine();
@@ -97,7 +110,17 @@ int main()
    // findSumEvenUptoN(10);
    // sumEvenUptoN(130);
    // printHello();
-   sumEvenNum(20);
+   // sumEvenNum(20);
+   bool prime = checkPrime(4);
+
+   if (prime)
+   {
+      cout << "Prime Number" << endl;
+   }
+   else
+   {
+      cout << "Not Prime Number" << endl;
+   }
 
    return 0;
 }
