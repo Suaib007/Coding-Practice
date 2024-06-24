@@ -41,12 +41,24 @@ void printCounting(int n)
    }
 }
 
+void checkEvenOdd(int num)
+{
+   if (num % 2 == 0)
+   {
+      cout << "Number is even" << endl;
+   }
+   else
+   {
+      cout << "Number is odd" << endl;
+   }
+}
 int main()
 {
    // printLine();
    // printMaximum(80, 760, 90);
    // int maximum = printMaximumNumber(81, 76, 90);
    // cout << "Maximum is :" << maximum << endl;
-   printCounting(10);
+   // printCounting(10);
+   checkEvenOdd(101);
    return 0;
 }
