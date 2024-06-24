@@ -81,7 +81,7 @@ int main()
    // cout << "Maximum is :" << maximum << endl;
    // printCounting(10);
    // checkEvenOdd(101);
-   // findSumUptoN(10);
    findSumEvenUptoN(10);
+   // sumEvenUptoN(130);
    return 0;
 }
