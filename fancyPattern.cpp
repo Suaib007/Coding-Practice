@@ -6,6 +6,12 @@ int main()
    int n;
    cin >> n;
 
+   if (n > 9)
+   {
+      cout << "Please put value <=9. \n";
+      return 0;
+   }
+
    for (int row = 0; row < n; row++)
    {
       int start_num_index = 8 - row;
